@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 from flask import Flask
-app = Flask(__name__)
+app = Flask(__ignareblog__)
 app.config['DEBUG'] = True
 
 @app.route("/")
