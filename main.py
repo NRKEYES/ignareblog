@@ -20,4 +20,9 @@ app.config['DEBUG'] = True
 
 @app.route("/")
 def hello():
-	return "It's Alive!"
+	return 'It's Alive!'
+
+@app.errorhandler(404)
+def page_not_found(e):
+    """Return a custom 404 error."""
+    return 'Sorry, nothing at this URL.', 404
