@@ -15,12 +15,12 @@
 # limitations under the License.
 #
 from flask import Flask
-app = Flask(__ignareblog__)
+app = Flask(__name__)
 app.config['DEBUG'] = True
 
 @app.route("/")
 def hello():
-	return 'It's Alive!'
+	return 'It is Alive!'
 
 @app.errorhandler(404)
 def page_not_found(e):
