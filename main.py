@@ -20,7 +20,7 @@ app.config['DEBUG'] = True
 
 @app.route("/")
 def hello():
-	return 'It is Alive!'
+	return '<h1 align=center>Welcome to Ignare.net</h1>'
 
 @app.errorhandler(404)
 def page_not_found(e):
